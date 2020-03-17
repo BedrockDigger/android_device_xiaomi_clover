@@ -84,6 +84,9 @@ PRODUCT_COPY_FILES += \
 # Vendor files
 $(call inherit-product, vendor/xiaomi/clover/clover-vendor.mk)
 
+# OP ScreenRederder
+$(call inherit-product-if-exists, vendor/apps/OPScreenRecord/config.mk)
+
 # AOSP DEVICE
 PRODUCT_NAME := aosp_clover
 PRODUCT_DEVICE := clover
