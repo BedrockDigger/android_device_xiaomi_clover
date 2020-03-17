@@ -25,8 +25,11 @@
 $(call inherit-product, device/xiaomi/clover/device.mk)
 
 # Inherit Evo-X product configuration
-TARGET_BOOT_ANIMATION_RES := 1200x1920
 TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+TARGET_INCLUDE_WIFI_EXT := true
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit EvoX GSM telephony parts
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
